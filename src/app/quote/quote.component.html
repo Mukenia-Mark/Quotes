@@ -3,8 +3,7 @@
   <hr />
   <ul>
     <p *ngFor="let quote of quote">
-      {{ quote.id }}
-      {{ quote.quote }}
+      {{ quote.id }} {{ quote.quote }}
       <app-quote-author [quote]="quote"></app-quote-author>
     </p>
   </ul>

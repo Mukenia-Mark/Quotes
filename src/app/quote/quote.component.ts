@@ -9,9 +9,9 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quote:Quote[] = [
-    {id:1, quote:'The way to get started is to quit talking and begin doing.',author:'-Walt Disney'},
-    {id:2,quote:'If life were predictable it would cease to be life, and be without flavor.',author:'-Eleanor Roosevelt'},
-    {id:3,quote:"Life is what happens when you're busy making other plans.", author:'-John Lennon'},
+    {id:1, quote:'The way to get started is to quit talking and begin doing.',author:'-Walt Disney',uploader:'Mark Mukenia'},
+    {id:2,quote:'If life were predictable it would cease to be life, and be without flavor.',author:'-Eleanor Roosevelt',uploader:'Mark Mukenia'},
+    {id:3,quote:"Life is what happens when you're busy making other plans.", author:'-John Lennon',uploader:'Mark Mukenia'},
   ];
 
   constructor() { }
