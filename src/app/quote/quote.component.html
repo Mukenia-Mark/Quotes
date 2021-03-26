@@ -2,9 +2,12 @@
   <h1>Quotes</h1>
   <hr />
   <ul>
-    <p *ngFor="let quote of quote">
+    <p *ngFor="let quote of quote; let i = index">
       {{ quote.id }} {{ quote.quote }}
-      <app-quote-author [quote]="quote"></app-quote-author>
+      <app-quote-author
+        [quote]="quote"
+        (isComplete)="deleteQuote($event, i)"
+      ></app-quote-author>
     </p>
   </ul>
 </div>

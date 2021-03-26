@@ -14,6 +14,16 @@ export class QuoteComponent implements OnInit {
     {id:3,quote:"Life is what happens when you're busy making other plans.", author:'-John Lennon',uploader:'Mark Mukenia'},
   ];
 
+  deleteQuote(isComplete:any, index:any){
+    if (isComplete){
+      let toDelete=confirm('Are you sure you want to delete this quote?')
+
+      if (toDelete){
+        this.quote.splice(index,1)
+      }
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
