@@ -5,7 +5,7 @@
     <p *ngFor="let quote of quote">
       {{ quote.id }}
       {{ quote.quote }}
-      {{ quote.author }}
+      <app-quote-author [quote]="quote"></app-quote-author>
     </p>
   </ul>
 </div>
