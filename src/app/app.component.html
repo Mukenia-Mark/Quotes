@@ -1,4 +1,10 @@
 <div>
   <h1>Quotes</h1>
-  <p>{{ quote }}</p>
+  <hr />
+  <ul>
+    <p *ngFor="let quote of quote">
+      {{ quote.id }}
+      {{ quote.quote }}
+    </p>
+  </ul>
 </div>
