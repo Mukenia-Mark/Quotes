@@ -1,6 +1,3 @@
 export class Quote {
-  id!: number;
-  quote!: string;
-  author!:string;
-  uploader!:string;
+  constructor (public quote: string, public author:string, public uploader:string){}
 }

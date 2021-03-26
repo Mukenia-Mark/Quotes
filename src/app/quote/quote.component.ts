@@ -8,18 +8,24 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
 
-  quote:Quote[] = [
-    {id:1, quote:'The way to get started is to quit talking and begin doing.',author:'-Walt Disney',uploader:'Mark Mukenia'},
-    {id:2,quote:'If life were predictable it would cease to be life, and be without flavor.',author:'-Eleanor Roosevelt',uploader:'Mark Mukenia'},
-    {id:3,quote:"Life is what happens when you're busy making other plans.", author:'-John Lennon',uploader:'Mark Mukenia'},
+  quotes:Quote[] = [
+    new Quote ('The way to get started is to quit talking and begin doing.','Walt Disney','Mark Mukenia'),
+    new Quote ('If life were predictable it would cease to be life, and be without flavor.','Eleanor Roosevelt','Mark Mukenia'),
+    new Quote ("Life is what happens when you're busy making other plans.", 'John Lennon','Mark Mukenia'),
   ];
 
+
+  addNewQuote(quote:any){
+    let quoteLength=this.quotes.length;
+    this.quotes.push(quote)
+  }
+
   deleteQuote(isComplete:any, index:any){
-    if (isComplete){
+    if (isComplete) {
       let toDelete=confirm('Are you sure you want to delete this quote?')
 
       if (toDelete){
-        this.quote.splice(index,1)
+        this.quotes.splice(index,1)
       }
     }
   }

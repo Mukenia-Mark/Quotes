@@ -1,6 +1,4 @@
-<p>
-  {{ quote.author }}
-</p>
+<p>"-{{ quote.author }}"</p>
 <p>This quote was uploaded by {{ quote.uploader }}</p>
 <button (click)="quoteDelete(true)" class="btn btn-outline-danger">
   Delete Quote

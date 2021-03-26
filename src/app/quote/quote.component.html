@@ -5,14 +5,17 @@
   <div class="row">
     <div class="col-md-6">
       <div>
-        <p *ngFor="let quote of quote; let i = index">
-          {{ quote.id }} {{ quote.quote }}
+        <p *ngFor="let quote of quotes; let i = index">
+          {{ quote.quote }}
           <app-quote-author
             [quote]="quote"
             (isComplete)="deleteQuote($event, i)"
           ></app-quote-author>
         </p>
       </div>
+    </div>
+    <div class="col-md-6">
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
   </div>
 </div>
