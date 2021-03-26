@@ -1,13 +1,18 @@
-<div>
+<div class="container">
   <h1>Quotes</h1>
   <hr />
-  <ul>
-    <p *ngFor="let quote of quote; let i = index">
-      {{ quote.id }} {{ quote.quote }}
-      <app-quote-author
-        [quote]="quote"
-        (isComplete)="deleteQuote($event, i)"
-      ></app-quote-author>
-    </p>
-  </ul>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div>
+        <p *ngFor="let quote of quote; let i = index">
+          {{ quote.id }} {{ quote.quote }}
+          <app-quote-author
+            [quote]="quote"
+            (isComplete)="deleteQuote($event, i)"
+          ></app-quote-author>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
