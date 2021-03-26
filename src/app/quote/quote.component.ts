@@ -9,12 +9,9 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quote:Quote[] = [
-    {id:1, quote:'Watch finding Nemo'},
-    {id:2,quote:'Buy Cookies'},
-    {id:3,quote:'Get new Phone Case'},
-    {id:4,quote:'Get Dog Food'},
-    {id:5,quote:'Solve math homework'},
-    {id:6,quote:'Plot my world domination plan'},
+    {id:1, quote:'The way to get started is to quit talking and begin doing.',author:'-Walt Disney'},
+    {id:2,quote:'If life were predictable it would cease to be life, and be without flavor.',author:'-Eleanor Roosevelt'},
+    {id:3,quote:"Life is what happens when you're busy making other plans.", author:'-John Lennon'},
   ];
 
   constructor() { }
