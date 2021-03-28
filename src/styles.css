@@ -23,3 +23,11 @@
   grid-row-gap: 15px;
   row-gap: 15px;
 }
+
+body {
+  background-image: url(./assets/img/books.jpg);
+  background-repeat: no-repeat;
+}
+h1 {
+  color: white;
+}
