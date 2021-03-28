@@ -22,11 +22,13 @@
   grid-template-rows: repeat(1, 1fr);
   grid-row-gap: 15px;
   row-gap: 15px;
+  float: left;
 }
 
 body {
   background-image: url(./assets/img/books.jpg);
   background-repeat: no-repeat;
+  font-family: fantasy;
 }
 h1 {
   color: white;
