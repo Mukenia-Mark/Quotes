@@ -10,11 +10,11 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
     new Quote ('The way to get started is to quit talking and begin doing.','Walt Disney','Mark',new Date(2021,2,26),5,3),
-    new Quote ('If life were predictable it would cease to be life, and be without flavor.','Eleanor Roosevelt','Mark',new Date(2021,2,26),0,0),
-    new Quote ("Life is what happens when you're busy making other plans.", 'John Lennon','Mark',new Date(2021,2,26),0,0),
-    new Quote ("Spread love everywhere you go. Let no one ever come to you without leaving happier.","Mother Teresa","Mark",new Date(2021,2,28),0,0),
-    new Quote ("Always remember that you are absolutely unique. Just like everyone else.","Margaret Mead","Mark",new Date(2021,2,28),0,0),
-    new Quote ("Tell me and I forget. Teach me and I remember. Involve me and I learn.","Benjamin Franklin","Mark",new Date(2021.2,28),0,0)
+    new Quote ('If life were predictable it would cease to be life, and be without flavor.','Eleanor Roosevelt','Mark',new Date(2021,2,26),7,10),
+    new Quote ("Life is what happens when you're busy making other plans.", 'John Lennon','Mark',new Date(2021,2,26),20,15),
+    new Quote ("Spread love everywhere you go. Let no one ever come to you without leaving happier.","Mother Teresa","Mark",new Date(2021,2,28),100,50),
+    new Quote ("Always remember that you are absolutely unique. Just like everyone else.","Margaret Mead","Mark",new Date(2021,2,28),700,2),
+    new Quote ("Tell me and I forget. Teach me and I remember. Involve me and I learn.","Benjamin Franklin","Mark",new Date(2021.2,28),150,16)
   ];
 
 
