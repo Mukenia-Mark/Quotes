@@ -12,6 +12,7 @@ export class QuoteComponent implements OnInit {
     new Quote ('The way to get started is to quit talking and begin doing.','Walt Disney','Mark',new Date(2021,2,26),0,0),
     new Quote ('If life were predictable it would cease to be life, and be without flavor.','Eleanor Roosevelt','Mark',new Date(2021,2,26),0,0),
     new Quote ("Life is what happens when you're busy making other plans.", 'John Lennon','Mark',new Date(2021,2,26),0,0),
+    new Quote ("Spread love everywhere you go. Let no one ever come to you without leaving happier.","Mother Teresa","Mark",new Date(2021,2,28),0,0)
   ];
 
 
